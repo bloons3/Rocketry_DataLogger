@@ -36,7 +36,7 @@ void setup()
   //Serial.println("BMP180 online!");
 
   daily_Pressure = bmp.readPressure();
-
+  soft.println("DAILY PRESSURE=" + String(daily_Pressure, DEC) + " Pa");
   //Serial.println("Pressure Set!");
   //Serial.println("Time in Milliseconds, Temperature degC, Pressure in Pascals, Altitude in Meters");
   soft.println("milliseconds, deg_Centigrade, pascals, meters");
